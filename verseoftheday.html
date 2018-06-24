@@ -10,13 +10,13 @@
 
     <!-- Stylesheets --> 
 
-	<link rel="stylesheet" href="css/googlefontroboto.css" type="text/css"> 
-    <link rel="stylesheet" href="css/MaterialIcons.css" type="text/css">
-    <link rel="stylesheet" href="css/animsition.css">
-    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
-    <link rel="stylesheet" href="css/material.blue-light-blue.min.css">  
-    <link rel="stylesheet" href="css/swipebox.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css2/googlefontroboto.css" type="text/css"> 
+    <link rel="stylesheet" href="assets/css2/MaterialIcons.css" type="text/css">
+    <link rel="stylesheet" href="assets/css2/animsition.css">
+    <link rel="stylesheet" type="text/css" href="assets/css2/sweetalert.css">
+    <link rel="stylesheet" href="assets/css2/material.blue-light-blue.min.css">  
+    <link rel="stylesheet" href="assets/css2/swipebox.min.css">
+    <link rel="stylesheet" href="assets/css2/style.css">
 	
 	<script type="text/javascript">
 
@@ -28,28 +28,20 @@ var dayOfYear = today-firstJan;
 
 var bgdImage;
 if((dayOfYear+'').length == 1)
-bgdImage = '00'+dayOfYear+'.png';
-else if((dayOfYear+'').length == 2)
-bgdImage = '0'+dayOfYear+'.png';
+bgdImage = '00'+dayOfYear+'.jpg';
+
 else
-bgdImage = dayOfYear+'.png';
-bgdImage1 = "http://kannadachristiansongs.in/KannadaBibles/kannada/" + bgdImage;
-
+bgdImage = dayOfYear+'.jpg';
+bgdImage1 = "http://kannadachristiansongs.in/KannadaBibles/dailypraise/" + bgdImage;
 document.getElementById('quotelan1').src = bgdImage1;
-bgdImage2 = "http://kannadachristiansongs.in/KannadaBibles/english/" + bgdImage;
-
-document.getElementById('quotelan2').src = bgdImage2;
 
 }
 
 function shareQuote1() {
     var imageUrl = document.getElementById("quotelan1").src;
-    window.plugins.socialsharing.share('ದೈನಂದಿನ ದೇವರ ವಾಕ್ಯಕ್ಕಾಗಿ  ಕನ್ನಡ ಬೈಬಲ್ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ.', null, imageUrl, 'https://goo.gl/7K0ePg')
+    window.plugins.socialsharing.share('ದೈನಂದಿನ ಸ್ತುತಿ ಮತ್ತು ಸ್ತೋತ್ರದ ಅರಿಕೆಗಲಿಗಾಗಿ ನಮ್ಮ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ.', null, imageUrl, 'https://play.google.com/store/apps/details?id=org.mannaministrypraises.app')
 }
-function shareQuote2() {
-    var imageUrl = document.getElementById("quotelan2").src;
-    window.plugins.socialsharing.share('Install Kannada Bibles App to get Daily Bible verse designed on a beatiful image.', null, imageUrl, 'https://goo.gl/7K0ePg')
-}
+
 </script>
 
 	
@@ -63,7 +55,7 @@ function shareQuote2() {
         <header class="mdl-layout__header mdl-shadow--1dp bg-white">
           <div class="mdl-layout__header-row">
             <!-- Title -->
-            <div class="mdl-layout-title">1000 Praises</div>
+            <span class="mdl-layout-title">1000 Praises Kannada</span>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
             <!-- Right Menu -->
@@ -76,16 +68,18 @@ function shareQuote2() {
               <div class="mdl-textfield__expandable-holder">
                 <input class="mdl-textfield__input" type="text" name="sample"
                        id="fixed-header-drawer-exp" />
-              </div>
-            </div><!-- end of search -->
+              </div><!-- end of search -->
+            </div>
+			<a class="mdl-button mdl-js-button mdl-button--icon s-right-activator animsition-link" href="index.html">
+              <i class="material-icons">home</i>
+            </a>
             
           </div>
-		  
         </header>
         <!-- Sidebar -->
         <div class="mdl-layout__drawer">
 
-          <!-- Top -->
+          
           <div class="drawer-header">
             <img src="img/user.jpg" alt="">
           </div>
@@ -94,22 +88,19 @@ function shareQuote2() {
           <nav class="mdl-navigation">
             <div class="mdl-collapse first">
                 <a class="mdl-navigation__link mdl-collapse__button">
-                    <i class="material-icons mdl-collapse__icon mdl-animation--default">arrow_drop_down</i>
-                    <span>Law of Christ Ministries</span>
+                    
+                    <span style="color:#ffffff">1000 Praises Kannada</span>
                 </a>
-                <div class="mdl-collapse__content-wrapper">
-                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
-                    
-                    <a class="mdl-navigation__link" href="#!">Help100churches@gmail.com</a>
-                    
-                  </div>
-                </div>
+                
             </div>
 			<a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">&#xE88A;</i><span>Home</span></a>
             <a class="mdl-navigation__link animsition-link" href="about.html"><i class="material-icons">&#xE88E;</i><span>About us</span></a>
-            <a class="mdl-navigation__link animsition-link" href="https://play.google.com/store/apps/dev?id=6155052346703643835"><i class="material-icons">&#xE5C3;</i><span>Our Android Apps</span></a>
-			<a class="mdl-navigation__link animsition-link" href="http://freechurchwebsite.org/realisations/"><i class="material-icons">&#xE051;</i><span>Our Websites</span></a>
-			<a class="mdl-navigation__link animsition-link" href="http://kannadachristiansongs.in/donations/"><i class="material-icons">&#xE8F6;</i><span>Donate</span></a>
+            <a class="mdl-navigation__link animsition-link" href="apps.html"><i class="material-icons">&#xE5C3;</i><span>Our Android Apps</span></a>
+			<a class="mdl-navigation__link animsition-link" href="http://mannaministry.in"><i class="material-icons">&#xE051;</i><span>Our Website</span></a>
+			<a class="mdl-navigation__link animsition-link" href="whatsapp.html"><i class="material-icons">&#xE8DC;</i><span>Social connect</span></a>
+			<!--<a class="mdl-navigation__link animsition-link" href="sponser.html"><i class="material-icons">&#xE7FB;</i><span>Sponsors</span></a>-->
+			<a class="mdl-navigation__link animsition-link" href="http://mannaministry.in/donations/"><i class="material-icons">&#xE8F6;</i><span>Support us</span></a>
+			
             
             
             
@@ -133,38 +124,26 @@ function shareQuote2() {
               </div>
           </footer>
 		  <br/>
-		  <h3> Daily Bible Verse</h3>
-		  <div class="profile-image"> 
-            <img alt=" ಇಮೇಜ್  ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಇಂಟರ್ನೆಟ್ ಕನೆಕ್ಷನ್ ಸಿಗುತ್ತಿಲ್ಲ" id="quotelan2"> 
-			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="shareQuote2()">  
-            <i class="material-icons white">share</i> 
-            </button> 
-          </div>
 
           
 
           
 
-          <footer class="mdl-mini-footer bg-light-blue">
-            <div class="mdl-mini-footer__left-section">
-              <div class="mdl-logo"><p> To share this image with others Click on the share button </p> </div>
-            </div>
-          </footer>
 
         </main>
       </div>
     </div>
 
 
-    <script src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/admob.js"></script>
-    <script src="js/jquery.animsition.js"></script>
-    <script src="js/sweetalert.min.js"></script> 
-    <script src="js/material.js"></script>
-    <script src="js/jquery.swipebox.min.js"></script>
-    <script src="js/function.js"></script>
+    <script src="assets/js2/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/js2/admob.js"></script>
+    <script src="assets/js2/jquery.animsition.js"></script>
+    <script src="assets/js2/sweetalert.min.js"></script> 
+    <script src="assets/js2/material.js"></script>
+    <script src="assets/js2/jquery.swipebox.min.js"></script>
+    <script src="assets/js2/function.js"></script>
 	 <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="assets/js2/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

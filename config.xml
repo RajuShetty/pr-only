@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "org.mannaministrypraises.app"
-        version   = "4"
-		android-versionCode="10004">
+        version   = "5"
+		android-versionCode="10005">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>Praises</name>

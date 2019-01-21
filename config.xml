@@ -3,9 +3,9 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "org.mannaministrypraises.app"
-        version   = "5"
-		android-versionCode="10005">
+        id        = "org.kannadachristianpraises.app"
+        version   = "1"
+		android-versionCode="10000">
 
     <!-- Change app id (above), name, description, and author. App ID can be any reverse domain name, such as com.mycompany.app -->
     <name>Praises</name>
@@ -20,7 +20,7 @@
 <content src="index.html"/>
   
   <!-- one signal push -->
-	<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
 <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-8.0.0" />
 
